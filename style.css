@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+*:focus-visible {
+  outline: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -715,7 +719,7 @@ a:hover {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 63px;
+    top: 62px;
     flex-direction: column;
     background-color: rgba(51, 51, 51, 0.98);
     width: 100%;
@@ -909,13 +913,6 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-/* Focus styles for accessibility */
-button:focus,
-a:focus {
-  outline: 2px solid #d4af37;
-  outline-offset: 2px;
 }
 
 /* Contact Page Styles */
